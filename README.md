@@ -19,6 +19,14 @@ These two tests are very simple, but they should give you an idea on how tests a
 Go to http://localhost:3000 and you should see a web page with the lamest calculator in the entire world wide web. Enter two numbers, click the button, and see the result.
 
 
+## The Code
+These are the main pieces of code that you want to look at:
+
+  * app/views/calculator/index.html.erb The sample view
+  * app/assets/javascript/calculator.js The JavaScript used on the view
+  * spec/javascripts/CalculatorSpec.js The Jasmine tests for the Calculator JavaScript.
+
+
 ## To run the Jasmine tests
 
     bundle exec rake jasmine:ci
