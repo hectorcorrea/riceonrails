@@ -14,7 +14,7 @@ These two tests are very simple, but they should give you an idea on how tests a
     git clone git@github.com:hectorcorrea/riceonrails.git
     cd riceonrails
     bundle install
-    bundle exec rails
+    bundle exec rails server
 
 Go to http://localhost:3000 and you should see a web page with the lamest calculator in the entire world wide web. Enter two numbers, click the button, and see the result.
 
