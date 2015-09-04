@@ -31,7 +31,7 @@ These are the main pieces of code that you want to look at:
 
     bundle exec rake jasmine:ci
 
-On a successful run you should see an output similar to this (notice the 7 specs, 0 failures line.):
+On a successful run you should see an output similar to this (notice the 2 specs, 0 failures line.):
 
     [2015-09-04 15:41:20] INFO  WEBrick 1.3.1
     [2015-09-04 15:41:20] INFO  ruby 2.2.2 (2015-04-13) [x86_64-darwin14]
@@ -39,7 +39,7 @@ On a successful run you should see an output similar to this (notice the 7 specs
     Waiting for jasmine server on 58265...
     jasmine server started
     .......
-    7 specs, 0 failures
+    2 specs, 0 failures
     [2015-09-04 15:41:22] INFO  going to shutdown ...
     [2015-09-04 15:41:22] INFO  WEBrick::HTTPServer#start done.
 
