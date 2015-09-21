@@ -4,14 +4,13 @@ describe("Calculator UI", function() {
     // Mimic the HTML controls that we need
     var html = '<input id="number1" value=""/> ' +
            '<input id="number2" value=""/> ' +
-           '<input id="theButton" disabled="false"/> ' +
+           '<input id="theButton"/> ' +
            '<span id="resultGoesHere"/>';
     setFixtures(html);
     // Execute our JavaScript code
     Calculator.toggleButton();
     // Make sure the result is what we expect
-    var button = $("#theButton");
-    expect(button.prop("disabled")).toBe(true );
+    expect($("#theButton")).toBeDisabled();
   });
 
   it("enables the button", function() {
@@ -22,8 +21,7 @@ describe("Calculator UI", function() {
     setFixtures(html);
 
     Calculator.toggleButton();
-    var button = $("#theButton");
-    expect(button.prop("disabled")).toBe(false);
+    expect($("#theButton")).not.toBeDisabled();
   });
 
   it("updates the UI with the result", function() {
