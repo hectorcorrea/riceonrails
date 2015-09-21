@@ -5,7 +5,10 @@
 
 <div>
 <p>
-  <input type="submit" onClick="new Calculator().calculateResult(); false" value="Add Them!"/>
+  <input id="theButton" type="submit"
+  onClick="Calculator.updateUI(); false"
+  value="Add Them!"
+  disabled="true"/>
 </p>
 </div>
 
