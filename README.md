@@ -4,9 +4,9 @@ This repository contains a bare-bones Ruby on Rails application to show how to u
 
 The application is an empty Rails application with one controller and one very simple view (`app/views/calculator/index.html.erb`) This view uses JavaScript to calculate the sum of two numbers and update the result on the page (`app/assets/javascript/calculator.js`.) All of this is very typical Rails code with a little bit of JavaScript.
 
-The Jasmine part is in the tests. File `spec/javascripts/CalculatorSpec.js` contains two tests. One tests shows how to test a plain vanilla JavaScript function that adds two numbers. The second test shows how to test a JavaScript function that depends on elements on the DOM and jQuery.
+The Jasmine part is in the tests. File `spec/javascripts/CalculatorSpec.js` contains one that shows how to test a plain vanilla JavaScript function that adds two numbers. File `spec/javascripts/CalculatorUISpec.js` contains a few tests that show how to test JavaScript functions that depend on elements on the DOM and jQuery.
 
-These two tests are very simple, but they should give you an idea on how tests are structured and some of the matchers available to validate that the value that you expect is the value that you get when Jasmine executes your JavaScript code. If you are familiar with RSpec this syntax should be familiar to you.
+These tests are very simple, but they should give you an idea on how tests are structured and some of the matchers available to validate that the value that you expect is the value that you get when Jasmine executes your JavaScript code. If you are familiar with RSpec this syntax should be familiar to you.
 
 
 ## To use this repo
@@ -24,7 +24,8 @@ These are the main pieces of code that you want to look at:
 
   * app/views/calculator/index.html.erb The sample view
   * app/assets/javascript/calculator.js The JavaScript used on the view
-  * spec/javascripts/CalculatorSpec.js The Jasmine tests for the Calculator JavaScript.
+  * spec/javascripts/CalculatorSpec.js The Jasmine tests for a plain vanilla JavaScript function.
+  * spec/javascripts/CalculatorUISpec.js The Jasmine tests that access the DOM via JavaScript.
 
 
 ## To run the Jasmine tests
@@ -53,4 +54,6 @@ Beside Rails, this repository depends on a few other gems. The `jasmine` gem is 
   * https://github.com/jasmine/jasmine
   * https://github.com/jasmine/jasmine-gem
   * https://github.com/velesin/jasmine-jquery
+
+
 
